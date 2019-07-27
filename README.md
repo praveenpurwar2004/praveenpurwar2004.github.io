@@ -1,5 +1,5 @@
 # praveenpurwar.github.io
-# cs498-ddv-final
+# cs498-dv-final
 D3.js visualization for CS498 Data Visualization - Narrative Visualization
 
 # Live Project
