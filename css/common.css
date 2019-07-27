@@ -1,0 +1,102 @@
+/* body {
+  font: 10px sans-serif;
+} */
+.axis path,
+.axis line, 
+.axis1 path,
+.axis1 line {
+  fill: none;
+  stroke: #E6E7E8;
+  shape-rendering: crispEdges;
+}
+.x.axis path, .x.axis1 path {
+  display: none;
+}
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+.legend-box {
+  cursor: pointer;  
+}
+#mouse-tracker {
+  stroke: #E6E7E8;
+  stroke-width: 1px;
+}
+.hover-line { 
+  stroke: #E6E7E8;
+  fill: none;
+  stroke-width: 1px;
+  left: 10px;
+  shape-rendering: crispEdges;
+  opacity: 1e-6;
+}
+.hover-text {
+  stroke: none;
+  font-size: 30px;
+  font-weight: bold;
+  fill: #000000;
+}
+.tooltip {
+  font-weight: normal;
+}
+.brush .extent {
+  stroke: #FFF;
+  shape-rendering: crispEdges;
+}
+
+
+.bar {
+  fill: #80cbc4;
+}
+
+text {
+  font-size: 12px;
+  fill: #fff;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+text.divergence {
+  font-size: 14px;
+  fill: #2F4A6D;
+}
+
+text.value {
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+text.source {
+  font-size: 10px;
+}

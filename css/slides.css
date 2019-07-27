@@ -1,0 +1,179 @@
+
+h1 {
+	font-size: 4em;
+	font-family: 'Lato';
+	color: #000;
+	margin:0;
+	padding:0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+.controlArrow.prev {
+	left: 50px;
+}
+.controlArrow.next {
+	right: 50px;
+}
+
+.section {
+	background-size: cover;
+}
+.slide {
+	background-size: cover;
+}
+
+#title {
+	background-image: url(../imgs/funding.png);
+}
+#title_text {
+	top: 5%;
+	left: 10%;
+	position: relative;
+}
+#title_text h1,h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#about {
+	background-image: url(../imgs/market_growth.jpg);
+	padding: 3% 6% 6% 6%;
+}
+#background_bw {
+	background-image: url(../imgs/background_bw.jpg);
+	padding: 3% 0 0 0;
+}
+
+#background_bw1 {
+    background-image: url(../imgs/background_bw.jpg);
+    padding: 3% 0 0 0;
+}
+
+#background_bw2 {
+    background-image: url(../imgs/background_bw.jpg);
+    padding: 3% 0 0 0;
+}
+
+#bubble_title {
+  margin: 30px;
+  color: #FFFFFF;
+}
+#bubble_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+}
+#bubble_container {
+  width: 1024px;
+  height: 520px;
+  margin: 30px; 
+  float: left;
+  width: 70%;
+}
+#bubble_text {
+  margin: 30px;
+  left: 5%;
+  padding: 10px;
+  float: left;
+  font-size: 15px;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	  
+}
+/* Top 25 Categories
+* --------------------------------------- */
+#zsb_title {
+  margin: 30px;
+}
+#zsb_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+}
+#zsb_container {
+  width: 1024px;
+  height: 520px;
+  margin: 30px;
+  float: left;
+  width: 70%;
+}
+#zsb_text {
+  margin: 30px;
+  left: 5%;
+  padding: 10px;
+  font-size: 15px;
+  float: left;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	  
+}
+/* NV Check-ins
+* --------------------------------------- */
+#linechart {
+  text-align:center;
+}
+#linechart_title {
+  margin: 30px;
+}
+#linechart_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+}
+#linechart_container {
+  margin: 30px;
+  width: 1024px;
+  height: 600px;
+  border: 1px solid black;
+  float: left;
+  background-color: #2F4A6D;
+}
+#linechart_text {
+  margin: 30px;
+  left: 5%;
+  padding: 10px;
+  font-size: 15px;
+  float: left;
+  /*width: 20%;*/
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	  
+}
+
+
+#acks {
+	background-image: url(../imgs/reference.jpg);
+	padding: 3% 52% 6% 6%;
+}
+#content_div, #acks_div {
+	padding: 10px;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(255, 255, 255, 0.6);	
+}
+#content_div, #acks_div h1,h2,h3,p {
+    font-weight: bold;
+    color: #000;
+}
+
+#acks_div ul {
+	list-style-image: url('../imgs/link.ico')
+}
+#acks_div a {
+	color: rgba(35, 35, 35, 0.8);
+	text-decoration:none;
+	border-bottom: 2px solid #ef8b80;
+	box-shadow: inset 0 -4px 0 #ef8b80;
+	transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+}
+#acks_div a:hover {
+  	background: #ef8b80;
+} 
+
+#emphasize {
+	color: green;
+	font-style: bolder;
+}
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #000;
+}
