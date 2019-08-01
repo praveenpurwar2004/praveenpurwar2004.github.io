@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>CS498 DDV Narrative Visualization - Karthikeyan Selvarajan(net id : ks33)</title>
+	<title>CS498 DDV Narrative Visualization - Praveen Gupta(net id : praveen6)</title>
 	<meta name="author" content="Stanley Lee" />
 	<meta name="description" content="fullPage full-screen backgrounds." />
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
@@ -56,33 +56,32 @@
 	<div class="section" id="about">
 		<div id="content_div">
 			<h1>About the Visualization</h1>
-			<p> This data visualization displays the market share analysis in different visuals. Data used for the visualization is related to the growth percentage in products sold in three categories - Apparels , Footwears, and Sportswear for the year 2016-2017 <br/>
-				Visualization represents the market share of data across all the regions of the globe and also the market share in its respective countries. </p>
+			<p> This data visualization displays the Venture Market Fund analysis in different visuals using D3 concepts. Data used for the visualization is related to Venture Capital Funding over a time series Quarter by Quarter around the world. <br/>
+				Visualization represents the Venture Market Funding across all the regions of the globe(US & Canada) categorised in by Funding Status. </p>
 			<h2>Recommended Settings</h2>
 			<p>Most of the visualizations use the canvas of 1024x768 pixels and henceforth,  the recommended viewing size of the interactive visualization is 1280x800 pixels.</p>
 			<h2>Visualization</h2>
 			<p>Three visualizations are used to represent the data.<br/><br/>
 				<u>Bubble Chart</u><br/>
-				Provides information about the complete dataset and also categorizes  based on product and region<br/><br/>
+				Provides information about the complete dataset and also broken down by status<br/><br/>
+				<u>Line Chart</u><br/>
+				Line Chart provides information about the total investement by each status per Quarter/Year<br/>
 				<u>Zoomable Sunburst Chart</u><br/>
-				Provides information in an aggregated format. Aggregation is done based on regions and its countries<br/><br/>
-				<u>Bar Chart</u><br/>
-				Provides information about the top ten countries<br/>
+				Provides information in an aggregated format.Aggregation is done based on US and Canada Funding<br/><br/>
 			</p>
 			<h2>Annotations</h2>
-			<p>Annotations have been used in all three visualizations. For instance, in bubble and sunburst chart they have been used to indicate the highest percentage division.</p>
+			<p>Annotations have been used in all three visualizations. For instance, in bubble and sunburst chart they are used to show per country Funding.</p>
 			<h2>Parameters and Triggers</h2>
 			<p>Parameters and Triggers are used across the visualizations.<br/><br/>
 				<u>Bubble Chart Visualization</u><br/>
 				In the bubble chart, three parameters are used<br/><br/>
 				<ul>
-			<li>Overall Market Share Data</li>
-			<li>Market Share By Region</li>
-			<li>Market Share By Product</li>
-			  </ul>
-				On selection of the respective parameters by the user, a trigger will change the bubble’s x,y co-ordinates parameter to their respective groupings.<br/><br/>
+			<li>Overall Market Funding</li>
+			<li>Market Funding by Countries</li>
+			<li>Market Funding By Year/Quarter</li>
+			    On selection of the respective parameters by the user, a trigger will change the bubble’s x,y co-ordinates parameter to their respective groupings.<br/><br/>
 			<u>Zoomable Sunburst Visualization</u><br/><br/>
-				Parameters and triggers are used based on the user mouse click actions. By clicking the region, the trigger zooms into the data and provides underneath information.<br/>
+				Parameters and triggers are used based on the user mouse click actions. By clicking the Country, the trigger zooms into the data and provides underneath information.<br/>
 				By clicking the center, it will trigger the parameters to return to its values one up in the hierarchy.<br/>
 		</div>
 	</div>
@@ -100,9 +99,9 @@
 				<tr height="650px">
 					<td width="20%">
 						<div id="bubble_text">
-							<p> Bubble charts displays the market share by percentage for the products <b>Apparel, Footswear and Sportwear</b> for the period <b>2016-2017</b> <br/><br/>
-								By region-wise <b>Western Europe</b> has the highest market share and by product-wise <b>Footwear</b>b> has the higher compared to other products
-								<br/><br/>Select Market Share by Region to view charts based on Region and Market Share by Product to view charts based on Product.</p>
+							<p> Bubble charts displays the Total Funding by Status , State , Country by respective markets <b>for the period <b>2010-2014</b> <br/><br/>
+								By status <b>US</b> has the highest funding between this period mostly led by Verizon Communications with a staggering venture funding of $34.3 Billion USD <br/>
+								<br/><br/>Select Market Funding by Country to view charts based on Status and Market Funding by Market.</p>
 						</div>
 					</td>
 					<td>
@@ -129,14 +128,14 @@
 			<table border="0px">
 				<tr>
 					<td colspan="2">
-						<div id="linechart_title"><h1>Market Share by Top Ten Countries</h1></div>
+						<div id="linechart_title"><h1>Aggregated View of Market Share Data</h1></div>
 					</td>
 
 				</tr>
 				<tr>
 					<td width="20%">
 						<div id="linechart_text">
-							<p>Bar chart displays the tope ten countries based on market share. <br/><br/> Move the mouse over the bar to get difference in percentages among the countries</p>
+							<p>Line chart displays the funding from 2000-2014 by each status and total funding . <br/><br/> Move the mouse over the bar to get total funding and individual funding by status</p>
 						</div>
 					</td>
 					<td>
@@ -164,11 +163,10 @@
 				<tr height="650px">
 					<td width="20%">
 						<div id="zsb_text">
-							<p>Zoomable sunburst chart displays the aggregated version of market share data.<br/><br/> In the center,
-								the overall sales growth percentage is displayed for the period 2016-2017. <br/><br/>
-								The layer sorrounding the centre displays the market share percentage by Region. <br/><br/>
-								Outer layer of Region is surrounded by its respective Countries as its children.<br/><br/>
-								The final outer layers display the individual product details within the respective country.
+							<p>Zoomable sunburst chart displays the aggregated funding of venture funding data.<br/><br/> In the center,
+								the overall funding is displayed for the period 2010-2015. <br/><br/>
+								The layer sorrounding the centre displays the Total Funding by different States. <br/><br/>
+								The final outer layers display the Total Funding by different market Categories which are recieving venture funding.<br/><br/>	
 							</p>
 						</div>
 					</td>
